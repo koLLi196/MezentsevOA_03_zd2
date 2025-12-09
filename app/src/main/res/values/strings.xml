@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">mezentsevUp03_zd2</string>
+    <string name="name_of_app">Films App</string>
+    <string name="desc_name">Выбирайте фильмы</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Войти</string>
+    <string name="selection_films">Подборка фильмов</string>
+    <string name="input_help">Введите название</string>
+    <string name="search">Найти</string>
+    <string name="filter">Добавить фильтр:</string>
+</resources>

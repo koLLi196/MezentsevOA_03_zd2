@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoMovieFragment"
+    android:background="@drawable/back_main"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/film_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bee Movie"
+        android:textColor="@color/purple"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/year_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Год выпуска: 2001"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/film_name" />
+
+    <TextView
+        android:id="@+id/runtime_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Длительность: 90 мин"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_film" />
+
+    <TextView
+        android:id="@+id/genres_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Жанры: Драма, комедия, мультик"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/runtime_film" />
+
+    <TextView
+        android:id="@+id/plot_film"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:text="Описание: Barry B. Benson, a bee just graduated from college, is disillusioned at his lone career choice: making honey. On a special trip outside the hive, Barry's life is saved by Vanessa, a florist in New York City. As their relationship ..."
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/genres_film" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
